@@ -3,10 +3,21 @@
   box-sizing: 0;
   margin: 0;
 }
+body{
+  width: 100%;
+  height: 100%;
+}
+main {
+  position: relative;
+  width: 100%;
 
+}
+header{
+  background-color: blue;
+}
 .header {
-position: relative;
-z-index:1;
+  position: relative;
+  z-index:1;
   text-align: center;
   font-size: 14px;
   padding: 1% 6% 1% 6%;
@@ -21,7 +32,7 @@ z-index:1;
   margin-left: 8px;
 }
 .container-logo {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   position:relative;
   z-index: 1;
   display: flex;
@@ -120,7 +131,7 @@ li a:focus {
 }
 .slideshow-container {
   position: relative;
-  max-width: 1900px;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -150,7 +161,6 @@ li a:focus {
   color: white;
   border: none;
   opacity: 30%;
-  margin-left:200px;
   border-radius: 0 5px 5px 0;
   z-index: 1;
 }
@@ -251,6 +261,8 @@ footer p {
 }
 footer {
   background-color: black;
+  width: 100%;
+
 }
 .footer {
   display: flex;
@@ -355,9 +367,7 @@ footer {
 .icono_seccion_mision img {
   width: 130px;
 }
-body{
-    width: 100%;
-}
+
 
 .icono_seccion_mision {
   border-radius: 50%;
@@ -414,10 +424,8 @@ body{
   color: rgb(8, 88, 102);
   font-weight: 900;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-main {
-  position: relative;
-}
+} 
+
 .ver_mas_cuadro {
   padding: 30px;
   border-radius: 30px;
@@ -609,32 +617,29 @@ textarea {
 
 
 /* REESPONSIVE DESING ENCABEZADO*/
-@media screen and (max-width: 608px) {
+@media screen and (min-width: 109px) and (max-width: 568px) {
     .header {
-        font-size: 12px;
-        display: none;
-      flex-direction: column; /* Cambia la dirección de los elementos a columna */
-      align-items: center; /* Centra los elementos en el eje vertical */
+      display: none;
+    }
+    .container-logo {
+      width: 100%; /* Para que ocupe todo el ancho de la pantalla */
+    }
+    
+    .container-logo-dos img {
+      max-width: 100%; /* Para que la imagen se ajuste al ancho de su contenedor */
     }
     .container-logo-dos img:nth-child(2){
-        display: none;
     }
     .buscar{
         display: none;
     }
-
-    header{
-        width: 100%;
-        background-color: red;
+    main{
+      overflow: hidden;
+      padding: 0.3% 6% 0.3% 6%;
     }
-    body{
-        width: 100%;
-        background-color: aqua;
-    }
- 
+   
     nav {
         position: absolute;
-        width: 70%;
         z-index: 1;
         box-shadow: 1px 1px 10px 1px;
         background-color: rgb(10, 33, 63);
@@ -680,6 +685,18 @@ textarea {
         width: 10px;
     }
 
-  
+    .slide img {
+      margin-left:-6%;
+      width: 120%;
+
+    }
+    footer{
+      padding: 0.3% 6% 0.3% 6%;
+        }
+    .footer{
+      display: block;
+      text-align: center;
+      
+    }
     /* Opcional: ajustar el tamaño de fuente o el espacio entre elementos según sea necesario */
   }
