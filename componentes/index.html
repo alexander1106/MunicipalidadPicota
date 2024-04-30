@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipalidad de Picotax </title>
+    <link rel="icon" href="/src/logo_picota.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <base href="/componentes/">
+
+</head>
+<body>
+    <header>
+        <div class="header">
+            <p>“Año del Bicentenario, de la consolidación de nuestra Independencia, y de la conmemoración de las heroicas batallas de Junín y Ayacucho”</p>
+            <div class="icon-header">
+                <a href="https://www.facebook.com/MuniLima"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.facebook.com/MuniLima"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.facebook.com/MuniLima"><i class="fa-brands fa-tiktok"></i></i></a>
+                <a href="https://www.facebook.com/MuniLima"><i class="fa-brands fa-youtube"></i></i></a>
+                <a href="https://www.facebook.com/MuniLima"><i class="fa-brands fa-linkedin"></i></i></a>      
+            </div>
+        </div>
+
+        <div class="container-logo">
+            <div class="container-logo-dos">
+                <img src="/src/logo_nav.png" alt="Logo de la Municipalidad de Picota">
+                <img src="/src/portal_transparencia.png" alt="Portal de transparencia">
+            </div>        
+            <div class="buscar">
+                <input type="text" placeholder="Buscar" required>
+                <div class="btn">
+                    <i class="fas fa-search-dollar"></i>
+                </div>
+            </div>
+        </div>   
+    </header>
+  
+    <nav>
+        <button class="menu"><i class="fa-solid fa-bars" ></i></button>
+        <ul class="ul">
+            <li><a href="/componentes/index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+            <li><a href="#"><i class="fa-solid fa-users"></i>Nosotros</a>
+                <ul class="submenu"></a>
+                    <li><a href="/componentes/mision.html" >Misión y Misión</a></li>
+                    <li><a href="/componentes/consejomunucipal.html" >Consejo Municipal</a></li>
+                    <li><a href="/componentes/funcionarios.html" >Funcionarios</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fa-solid fa-users"></i>Picota</a>
+                <ul class="submenu"></a>
+                    <li><a href="/componentes/historia.html" >Historia</a></li>
+                    <li><a href="/componentes/distrito.html" >Distritos</a></li>
+                    <li><a href="/componentes/escudo.html" >Escudo e Himno</a></li>
+                    <li><a href="/componentes/recursosturisticos.html" >Recursos Turisticos</a></li>
+                </ul>
+            <li><a href="/componentes/servicios.html"><i class="fa-solid fa-person-chalkboard" ></i>Servicios</a></li>
+            <li><a href="/componentes/noticias.html"><i class="fa-solid fa-earth-americas"></i>Noticas</a></li>
+            <li><a href="/componentes/contacto.html"><i class="fa-solid fa-address-book"></i>Contacto</a></li>
+        </ul>
+    </nav>
+        <main>  
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="/src/Juramentacion alcalda.jpg" alt="Image 1">
+            </div>
+            <div class="slide fade">
+                <img src="/src/Muni picota.jpg" alt="Image 2">
+            </div>
+            <div class="slide fade">
+                <img src="/src/imagen3.jpg" alt="Image 3">
+            </div>
+            <div class="slide fade">
+                <img src="/src/imagen4.jpg" alt="Image 3">
+            </div>
+            <!-- Agrega más imágenes aquí según sea necesario -->
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">        
+            <div>
+                <p>MUNICIPALIDAD PROVINCIAL DE PICOTA</p>
+                <p>Nuestro objetivo es crear una comunidad donde se compartan conocimientos e informaciones sobre nuestra noble y acogedora ciudad.</p>
+            </div>
+            <div>
+                <p> HORARIO DE ATENCION</p>
+                <p>Lun - Sab 8:00 am a 12:30 pm - 2.00 pm a 5.15 pm</p>
+                <p>RUC: 20154546953</p>
+                <p> DIRECCION: Jr. Miguel Grau N° 396 – Picota</p>
+            </div>
+            <div>
+                <p>SIGUENOS!</p>
+                <div class="icon_footer">
+                    <a href="https://www.facebook.com/MuniLima"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/MuniLima"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.facebook.com/MuniLima"><i class="fa-brands fa-tiktok"></i></i></a>
+                    <a href="https://www.facebook.com/MuniLima"><i class="fa-brands fa-youtube"></i></i></a>
+                    <a href="https://www.facebook.com/MuniLima"><i class="fa-brands fa-linkedin"></i></i></a>     
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="final">
+        <p>Municipalidad Provincial de Rioja - Perú © 2024</p> 
+    </div>
+    </footer>
+    <script>        
+        const botonMenuResponsive = document.querySelector(".menu");
+        const mostrarMenuResponsive = document.querySelector(".ul");
+        // Funciones de manejo de eventos
+        const mostrarElemento = (elemento) => {
+            elemento.style.display = "block";
+        };
+
+        const ocultarElemento = (elemento) => {
+              elemento.style.display = "none";
+        };
+
+        // Asignar eventos
+        botonMenuResponsive.addEventListener("click", () => mostrarElemento(mostrarMenuResponsive));
+
+        let slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 5000); // Cambia la imagen cada 2 segundos (ajusta este valor según lo desees)
+        }
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+</script>
+
+</body>
+</html>
