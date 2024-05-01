@@ -14,10 +14,8 @@ botonMostrarOcultar.addEventListener('click', function() {
     // Si el mensaje está visible, ocultarlo; si está oculto, mostrarlo
     if (mensaje.style.display === 'none') {
         mensaje.style.display = 'block'; // Mostrar el mensaje
-        botonMostrarOcultar.textContent = 'Ocultar Mensaje';
     } else {
         mensaje.style.display = 'none'; // Ocultar el mensaje
-        botonMostrarOcultar.textContent = 'Mostrar Mensaje';
     }
 });
 

@@ -435,10 +435,8 @@ footer {
 .container_tex_vision {
   color: grey;
   width: 35%;
-  max-height: 54vh;
   text-align: center;
   border-radius: 20px;
-
   transition: 0.5s; /* Transición suave de transformación */
 }
 .container_tex_vision:hover {
@@ -703,7 +701,6 @@ textarea {
     }
 
     ul li ul.submenu li a {
-      background-color: black;
       width: 100%;
     }
     
@@ -776,7 +773,44 @@ textarea {
       width: 100%;
     }
     /* Opcional: ajustar el tamaño de fuente o el espacio entre elementos según sea necesario */
-    /*Responsive menu*/
-  
+    /*MISION*/
+    .seccion_mision{
+      display: block;
+    }
+    .container_mision{
+      display: block;
+      width: 100%;
+      margin-top: 100px;
+      margin: auto;
+    }
+
+    .container_tex_vision {
+      color: grey;
+      margin: auto;
+      padding: 10px;
+      margin-top: 20px;
+      width: 100%;
+      text-align: center;
+      border-radius: 20px;
+      transition: 0.5s; /* Transición suave de transformación */
+    }
+    .container_tex_vision:nth-child(2) {
+      margin-top: 30px;
+    }
+
+    .container_tex_vision button{
+      display: none;
+    };
+    .container_tex_vision h3 {
+      font-size: 228px;
+      margin: 20px;
+      color: rgb(8, 88, 102);
+      font-weight: 900;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    } 
+
+    .icono_seccion_mision{
+      height: 22vh;
+    }
   }
 
