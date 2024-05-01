@@ -420,6 +420,7 @@ footer {
   margin: auto;
   margin-bottom: 20px;
   overflow: hidden;
+
 }
 .ver_mas {
   background-color: rgb(29, 148, 148);
@@ -810,7 +811,27 @@ textarea {
     } 
 
     .icono_seccion_mision{
-      height: 22vh;
+      height: 20vh;
+    }
+    .contenedor_historia div{
+      width:120%;
+      margin-left: -10%;
+    }
+
+
+    .historia_flex{
+      display:block;
+      width:50%;
+    }
+    .historia_flex div{
+      width: 80%;
+      margin:auto;
+    }
+    .historia_flex img{
+      margin-top:30px
+    }
+    .contenedor_historia h2{
+      line-height: 33px;
     }
   }
 
