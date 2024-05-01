@@ -1,20 +1,13 @@
-* {
-  box-sizing: 0;
-  box-sizing: 0;
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body{
-  width: 100%;
+  width: 100% ;
   height: 100%;
 }
-main {
-  position: relative;
-  width: 100%;
 
-}
-header{
-  background-color: blue;
-}
 .header {
   position: relative;
   z-index:1;
@@ -32,13 +25,15 @@ header{
   margin-left: 8px;
 }
 .container-logo {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(26, 17, 17);
   position:relative;
   z-index: 1;
   display: flex;
   align-items: center;
-  padding: 0.3% 6% 0.3% 6%;
+  width: 100%;
+  padding: 0.3% 0% 0.3% 6%;
   justify-content: space-between;
+
 }
 .container-logo-dos {
   display: flex;
@@ -89,6 +84,7 @@ header{
 nav {
   margin: 0px 74px;
   position: relative;
+  width: 80%;
   z-index: 1;
   margin-bottom: 2px;
   box-shadow: 1px 1px 10px 1px;
@@ -131,7 +127,7 @@ li a:focus {
 }
 .slideshow-container {
   position: relative;
-  max-width: 100%;
+  width: 100%;
   margin: auto;
 }
 
@@ -243,6 +239,9 @@ ul li:hover ul.submenu {
   width: 60%;
   height: 400px;
   box-shadow: 1px 1px 10px 1px;
+}
+footer{
+  width: 100%;
 }
 footer p {
   margin-bottom: 10px;
@@ -617,26 +616,25 @@ textarea {
 
 
 /* REESPONSIVE DESING ENCABEZADO*/
-@media screen and (min-width: 109px) and (max-width: 568px) {
+@media  (max-width: 668px) {
     .header {
       display: none;
     }
     .container-logo {
-      width: 100%; /* Para que ocupe todo el ancho de la pantalla */
+      background-color: aquamarine;
+      width: 100%;
     }
     
     .container-logo-dos img {
-      max-width: 100%; /* Para que la imagen se ajuste al ancho de su contenedor */
+      max-width: 89%; /* Para que la imagen se ajuste al ancho de su contenedor */
     }
     .container-logo-dos img:nth-child(2){
+      display: none;
     }
     .buscar{
         display: none;
     }
-    main{
-      overflow: hidden;
-      padding: 0.3% 6% 0.3% 6%;
-    }
+ 
    
     nav {
         position: absolute;
@@ -684,15 +682,15 @@ textarea {
         display: block;
         width: 10px;
     }
+    main{
+      width: 100%;
+    }
 
     .slide img {
-      margin-left:-6%;
-      width: 120%;
+      width: 100%;
 
     }
-    footer{
-      padding: 0.3% 6% 0.3% 6%;
-        }
+
     .footer{
       display: block;
       text-align: center;
