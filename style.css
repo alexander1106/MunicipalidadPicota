@@ -333,6 +333,7 @@ footer {
   width: 65%;
   margin: auto;
   padding: 10px;
+  height: 20vh;
   border-radius: 25px;
   display: flex;
   height: 60vh;
@@ -918,7 +919,7 @@ textarea {
     .noticias {
       width: 100%;
       margin: auto;
-      height: 30vh !important;
+      height: 28vh !important;
       border-radius: 25px;
       display: flex;
       box-shadow: 1px 1px 10px 1px;
