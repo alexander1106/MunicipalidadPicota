@@ -5,18 +5,21 @@ const expandirVision = document.querySelector("#ver_mas_cuadro_vision");
 const expandirMision = document.querySelector("#ver_mas_cuadro_mision");
 const botonCerrarCuadroVision = document.querySelector("#cerrar_vision");
 const botonCerrarCuadroMision = document.querySelector("#cerrar_mision");
-const botonMenuResponsive = document.querySelector(".menu");
-const mostrarMenuResponsive = document.querySelector(".ul");
+const botonMostrarOcultar = document.querySelector(".menu");
+const mensaje = document.querySelector(".ul");
 
 
-// Funciones de manejo de eventos
-const mostrarElemento = (elemento) => {
-    elemento.style.display = "block";
-};
-
-const ocultarElemento = (elemento) => {
-    elemento.style.display = "none";
-};
+// Agregar evento de clic al botón
+botonMostrarOcultar.addEventListener('click', function() {
+    // Si el mensaje está visible, ocultarlo; si está oculto, mostrarlo
+    if (mensaje.style.display === 'none') {
+        mensaje.style.display = 'block'; // Mostrar el mensaje
+        botonMostrarOcultar.textContent = 'Ocultar Mensaje';
+    } else {
+        mensaje.style.display = 'none'; // Ocultar el mensaje
+        botonMostrarOcultar.textContent = 'Mostrar Mensaje';
+    }
+});
 
 // Asignar eventos
 botonMenuResponsive.addEventListener("click", () => mostrarElemento(mostrarMenuResponsive));
