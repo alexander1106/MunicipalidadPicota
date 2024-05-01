@@ -95,11 +95,16 @@ ul {
   list-style-type: none; /* Quitar viñetas de la lista */
   justify-content: space-evenly;
   align-items: center;
-  padding: 4px;
+  padding: 6px;
+  font-size: 20px;
+
 }
 ul li {
   display: inline-block;
   position: relative;
+  text-transform: uppercase;
+
+
 }
 ul li i {
   margin-right: 10px;
@@ -117,12 +122,14 @@ li a {
 
 li a:hover {
   background-color: white;
-  color: rgb(11, 116, 84);
+  color: rgb(3, 3, 3);
   border-radius: 5px;
+  width: 150px;
 }
 li a:focus {
-  color: aqua;
-  background-color: blueviolet;
+  color: rgb(41, 105, 105);
+  font-weight: 900;
+  background-color: rgb(255, 255, 255);
 }
 .slideshow-container {
   position: relative;
@@ -192,10 +199,15 @@ ul li ul.submenu li {
   color: white;
   font-size: 13px;
   height: 20px;
+  padding: 1px;
+  line-height: 20px;
+  text-transform: capitalize;
+
   margin-bottom: 18px;
 }
 ul li ul.submenu li a {
   margin-top: -10px;
+  margin-bottom: 15px;
 }
 ul li ul.submenu {
   width: 180px;
@@ -203,9 +215,9 @@ ul li ul.submenu {
   display: none;
   z-index: 3;
   margin-left: 25px;
-  opacity: 40%;
-  margin-top: 4px;
-  background-color: rgb(0, 0, 0);
+  padding: 4px;
+  margin-bottom: 8px;
+  background-color: rgb(10, 33, 63);
 }
 
 ul li:hover ul.submenu {
@@ -241,26 +253,38 @@ ul li:hover ul.submenu {
 }
 footer{
   width: 100%;
+  font-family:   sans-serif;
+  font-size: 18px;
 }
 footer p {
   margin-bottom: 10px;
+  font-size: 13px;
 }
-.footer p:nth-child(2) {
-  font-size: 12px;
-}
+
 .footer .icon_footer {
-  width: 60%;
-  font-size: 35px;
+  width: 100%;
+  font-size: 30px;
+  margin: auto;
   color: white;
+  text-align: center;
+}
+.footer img{
+  width: 300px;
 }
 .icon_footer i {
-  color: white;
+  color: rgb(255, 255, 255);
   margin: 5px;
+  font-size: 40px;
+  margin-left: 6px;
+  text-align: center;
+}
+.icon_footer i:hover{
+  opacity: 60%;
+  transform: scale(1.2);
 }
 footer {
   background-color: black;
   width: 100%;
-
 }
 .footer {
   display: flex;
@@ -268,17 +292,23 @@ footer {
   color: white;
   margin: auto;
   justify-content: space-around;
-  padding: 40px;
+  padding: 40px 40px 10px 30px;
 }
 .footer div {
   margin-right: 50px;
   width: 25%;
 }
+.footer div:nth-child(3) {
+  margin-right: 50px;
+  width: 15%;
+}
 .final {
   background-color: black;
-  color: white;
+  color: rgb(218, 218, 218);
   text-align: center;
   padding: 10px;
+  text-transform: uppercase;
+
 }
 
 .seccion_noticias {
@@ -639,7 +669,6 @@ textarea {
         display: none;
     }
  
-   
     nav {
         position: absolute;
         z-index: 1;
@@ -653,7 +682,7 @@ textarea {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 20% ;
+        margin-right: 40% ;
     }
     .menu button{
       margin-top: 35px;
@@ -661,28 +690,32 @@ textarea {
       background-color: white;
       border: 0px;
     }
-
+ 
     ul li ul.submenu li {
       display: block;
       color: white;
       font-size: 13px;
-      height: 20px;
+      height: 30px;
+      width: 180px;
+      margin-top:1px;
       font-size: 8px;
-
       margin-bottom: 18px;
     }
+
+    ul li ul.submenu li a {
+      background-color: black;
+      width: 100%;
+    }
+    
     ul li ul.submenu {
-      width: 180px;
+      width: 200px;
       position: absolute;
       display: none;
       z-index: 3;
       margin-left: 130px;
       margin-top: 4px;
-
-      background-color: rgb(0, 0, 0);
     }
     
-
     .menu i{
       text-align: right;
       justify-content: right;
@@ -713,7 +746,7 @@ textarea {
         font-size: 14px;
         font-weight: 600;
         padding: 12px 20px; /* Espaciado interno */
-        color: white;
+        width: 100px;
         text-decoration: none; /* Quitar subrayado de los enlaces */
       }
 
@@ -723,13 +756,27 @@ textarea {
 
     .slide img {
       width: 100%;
-
     }
 
     .footer{
       display: block;
+      width: 100%;
       text-align: center;
-      
+    }
+    .footer div{
+      width: 80%;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+    .icon_footer i{
+      font-size: 30px;
+    }
+    .footer div:nth-child(3) {
+      margin-right: 50px;
+      width: 100%;
     }
     /* Opcional: ajustar el tamaño de fuente o el espacio entre elementos según sea necesario */
+    /*Responsive menu*/
+  
   }
+
