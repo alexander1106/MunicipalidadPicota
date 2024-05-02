@@ -681,6 +681,74 @@ textarea {
   opacity: 50%;
   transform: scale(1.1);
 }
+/*SECCION FUNCIONARIOS*/
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #196771;
+  font-size: 30px;
+  font-family: sans-serif;
+  height: 15vh;
+  font-weight:800;
+}
+.contenedor_de_Imagen{
+  width: 350px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor_de_Imagen img{
+  border-radius: 20px;
+}
+.seccion_funcionarios{
+  width: 100%;
+}
+.funcionario{
+  width: 64%;
+  margin:auto;
+  padding:20px;
+  padding-left: 40px;
+  display: flex;
+  margin-bottom: 50px;
+  border-radius: 40px;
+  box-shadow: 1px 1px 10px 1px;
+}
+.texto_funcionario{
+  width: 80%;
+  margin:auto;
+  margin-bottom: 50px;
+}
+
+.cargo{
+  color:rgb(10, 37, 57);
+  text-transform:uppercase;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 90%;
+  word-spacing: 1px;
+  font-size: 18px;
+  font-weight: 900;
+  text-align: left;
+}
+
+.titulo_funcionario_uno{
+  color: rgb(44, 142, 170);
+  font-weight: 900;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.descripcion{
+  color: gray;
+  font-family: sans-serif;
+  align-items: center;
+  text-decoration: none;
+  word-spacing: 5px;
+  margin-bottom: 4px;
+  font-size:10px;
+  font-weight: 600;
+}
+
 /*SECCION DISTRITO*/
 .secction_distrito{
   width: 100%;
@@ -1075,4 +1143,48 @@ textarea {
       margin-bottom: 40px;
     }
 
+    /* SECCION DE FUNCIONARIOS    */
+    .seccion_funcionarios{
+      width: 100%;
+    }
+    .seccion_funcionarios h1{
+      font-size: 10px;
+    }
+    .funcionario{
+      width: 80%;
+      display: block;
+      height: 41vh;
+      overflow: hidden;
+    }
+    .cargo{
+      margin-left: -20%;
+      font-size: 13px;
+      width:70vw;
+      text-align: center;
+    }
+    .funcionario img{
+      margin: auto;
+    }
+    .contenedor_de_Imagen{
+      width: 80%;
+      margin-top: -19%;
+      margin-left: 10px;
+    }
+    .contenedor_de_Imagen img{
+      width: 80%;
+      margin-top: -10%;
+    }
+    .titulo_funcionarios{
+      margin-left: -20%;
+      font-size: 26px;
+      text-align: center;
+
+    }
+    .descripcion{
+      display: none;
+    }
+    .titulo_funcionario_uno{
+      background-color: #196771;
+      display: none;
+    }
   }
