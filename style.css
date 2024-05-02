@@ -511,35 +511,65 @@ footer {
 }
 .seccion_servicios {
   padding: 50px 0px;
+  width: 80%;
+  margin:auto;
 }
 .seccion_servicios p {
   text-align: center;
+  padding-bottom: 20px;
   font-size: 30px;
+  color:rgb(53, 99, 117);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   letter-spacing: 4px;
 }
+.conteiner-servicios i{
+  font-size: 120px;
+  margin-top: 10px;
+  color:rgb(53, 84, 104);
+}
 .conteiner-servicios {
-  width: 80%;
+  width: 83%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin: auto;
-  padding: 30px 0px;
-  display: grid;
-  grid-template-columns: repeat(4, 20%);
-  justify-content: center;
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 40px;
+}
+
+
+
+@media (min-width: 768px) {
+  .item {
+      width: 22%; /* Ancho del elemento en pantallas más grandes */
+  }
 }
 
 .servicio {
   display: flex;
+  flex-direction: column;
+  width:30%;
+  margin-bottom: 20px; /* Espaciado entre elementos */
+  background-color: #f0f0f0; /* Color de fondo para visualización */
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  border: 1px black;
+  box-shadow: 1px 1px 10px 1px #094f5c;
   border-radius: 10px;
+  margin:13px;
   font-size: 16px;
   font-family: sans-serif;
-  height: 34vh;
+  text-align:center;
+  height: 36vh;
+  cursor:pointer;
 }
-
+.servicio:hover{
+  transform: scale(1.02);
+}
+.servicio h3{
+  color:rgb(124, 124, 124);
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  
+}
 .contenedor-contactos {
   display: flex;
   border-radius: 20px;
@@ -550,8 +580,6 @@ footer {
   margin-bottom: 20px;
   padding-bottom: 10px;
 }
-
-
 
 form {
   width: 47%;
@@ -966,4 +994,16 @@ textarea {
       padding: 7px;
     }
 
+    /*SERVICIOS*/
+    .conteiner-servicios {
+      display: block;
+      width: 100%;
+      background-color: #440080;
+    }
+    .servicio{
+      width: 100%;
+      margin: auto;
+      margin-bottom: 40px;
+
+    }
   }
