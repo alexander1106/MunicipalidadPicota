@@ -1149,7 +1149,7 @@ h1{
       width: 100%;
     }
     .seccion_funcionarios h1{
-      font-size: 10px;
+      font-size: 20px;
     }
     .funcionario{
       width: 80%;
@@ -1168,7 +1168,7 @@ h1{
     }
     .contenedor_de_Imagen{
       width: 80%;
-      margin-top: -19%;
+      margin-top: -16%;
       margin-left: 10px;
     }
     .contenedor_de_Imagen img{
