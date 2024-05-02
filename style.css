@@ -976,6 +976,8 @@ h1{
     /*MISION*/
     .seccion_mision{
       display: block;
+      margin-bottom: 30px;
+
     }
     .container_mision{
       display: block;
