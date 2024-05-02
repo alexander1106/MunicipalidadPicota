@@ -998,12 +998,16 @@ textarea {
     .conteiner-servicios {
       display: block;
       width: 100%;
-      background-color: #440080;
     }
     .servicio{
       width: 100%;
       margin: auto;
       margin-bottom: 40px;
-
+    }
+    .servicio h3{
+      font-size: 23px;
+    }
+    .seccion_servicios p{
+      font-weight: 900;
     }
   }
