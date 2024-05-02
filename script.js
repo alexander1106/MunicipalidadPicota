@@ -1,10 +1,4 @@
-// Seleccionar elementos
-const botonVerMasMision = document.querySelector("#ver_mas_mision");
-const botonVerMasVision = document.querySelector("#ver_mas_vision");
-const expandirVision = document.querySelector("#ver_mas_cuadro_vision");
-const expandirMision = document.querySelector("#ver_mas_cuadro_mision");
-const botonCerrarCuadroVision = document.querySelector("#cerrar_vision");
-const botonCerrarCuadroMision = document.querySelector("#cerrar_mision");
+
 const botonMostrarOcultar = document.querySelector(".menu");
 const mensaje = document.querySelector(".ul");
 
@@ -22,10 +16,3 @@ botonMostrarOcultar.addEventListener('click', function() {
 // Asignar eventos
 botonMenuResponsive.addEventListener("click", () => mostrarElemento(mostrarMenuResponsive));
 
-botonVerMasMision.addEventListener("click", () => mostrarElemento(expandirMision));
-botonCerrarCuadroMision.addEventListener("click", () => ocultarElemento(expandirMision));
-botonVerMasVision.addEventListener("click", () => {
-    mostrarElemento(expandirVision);
-    // Aquí puedes añadir cualquier otra lógica que necesites al abrir la visión
-});
-botonCerrarCuadroVision.addEventListener("click", () => ocultarElemento(expandirVision));
