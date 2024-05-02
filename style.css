@@ -681,6 +681,53 @@ textarea {
   opacity: 50%;
   transform: scale(1.1);
 }
+/*SECCION DISTRITO*/
+.secction_distrito{
+  width: 100%;
+}
+.conteiner-distritos{
+  width: 90%;
+  margin: auto;
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.titulo_distrito{
+  width: 89%;
+  margin: auto;
+  font-weight: 900;
+  font-size: 30px;
+  padding-top: 30px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  text-align: center;
+  color: #094f5c;
+}
+
+.contenedor_imagen_distrito {
+  width: 23%;
+  margin: 10px;
+  height: 34vh;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contenedor_imagen_distrito:hover{
+  transform: scale(1.02);
+  transition: 0.4s;
+}
+.contenedor_imagen_distrito p{
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.contenedor_imagen_distrito img{
+  object-fit: cover;
+  box-shadow: 1px 1px 10px 1px;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+
 
 /*SECCION HISTORIA*/
 .seccion_historia {
@@ -856,6 +903,7 @@ textarea {
       margin-right: 50px;
       width: 100%;
     }
+
     /* Opcional: ajustar el tamaño de fuente o el espacio entre elementos según sea necesario */
     /*MISION*/
     .seccion_mision{
@@ -999,8 +1047,9 @@ textarea {
     }
 
     /*SERVICIOS*/
+    
     .conteiner-servicios {
-      display: block;
+      display: flex;
       width: 100%;
     }
     .servicio{
@@ -1014,4 +1063,16 @@ textarea {
     .seccion_servicios p{
       font-weight: 900;
     }
+    /*DISTRITOS*/
+
+    .conteiner-distritos{
+      display: block;
+      width: 100%;
+    }
+    .contenedor_imagen_distrito{
+      width: 100%;
+      margin: auto;
+      margin-bottom: 40px;
+    }
+
   }

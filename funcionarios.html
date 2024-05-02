@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Municipalidad de Picotax </title>
-    <link rel="icon" href="/src/logo_picota.png">
+    <title>Municipalidad de Picota</title>
+
+    <link rel="icon" href="logo_picota.png">
     <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 <body>
@@ -14,7 +16,7 @@
         <div class="header">
             <p>“Año del Bicentenario, de la consolidación de nuestra Independencia, y de la conmemoración de las heroicas batallas de Junín y Ayacucho”</p>
             <div class="icon-header">
-                <a href="https://www.facebook.com/MuniLima"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.facebook.com/MunicipalidadProvincialdePicotaOFICIAL"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://www.facebook.com/MuniLima"><i class="fa-brands fa-square-instagram"></i></a>
                 <a href="https://www.facebook.com/MuniLima"><i class="fa-brands fa-tiktok"></i></i></a>
                 <a href="https://www.facebook.com/MuniLima"><i class="fa-brands fa-youtube"></i></i></a>
@@ -24,8 +26,11 @@
 
         <div class="container-logo">
             <div class="container-logo-dos">
-                <img src="/src/logo_nav.png" alt="Logo de la Municipalidad de Picota">
-                <img src="/src/portal_transparencia.png" alt="Portal de transparencia">
+                <div class="menu">
+                    <button ><i class="fa-solid fa-bars" ></i></button>
+                </div>
+                <img src="logo_nav.png" alt="Logo de la Municipalidad de Picota">
+                <img src="portal_transparencia.png" alt="Portal de transparencia">
             </div>        
             <div class="buscar">
                 <input type="text" placeholder="Buscar" required>
@@ -33,12 +38,10 @@
                     <i class="fas fa-search-dollar"></i>
                 </div>
             </div>
-        </div>
-    
+        </div>   
     </header>
   
     <nav>
-        <button class="menu"><i class="fa-solid fa-bars" ></i></button>
         <ul class="ul">
             <li><a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
             <li><a href="#"><i class="fa-solid fa-users"></i>Nosotros</a>
@@ -57,43 +60,72 @@
             <li><a href="contacto.html"><i class="fa-solid fa-address-book"></i>Contacto</a></li>
         </ul>
     </nav>
-    <main>  
-    <section class="seccion_noticias">
-        <h1>ULTIMAS NOTICIAS</h1>
-        <div class="conteiner-noticias">
-            <div class="noticias">
-                <div class="texto_noticias">
-                    <h2 class="titulo_noticas"> 𝐒𝐎𝐋Ð𝐀𝐃𝐎 𝐏𝐈𝐂𝐎𝐓𝐈𝐍𝐎 𝐅𝐀𝐋𝐋𝐄𝐂𝐄 𝐄𝐍 𝐀𝐂𝐂𝐈𝐃𝐄𝐍𝐓𝐄 𝐄𝐍 𝐄𝐋 𝐕𝐑𝐀𝐄𝐌</h2>
-                    <p class="descripcion">El pasado 18 de abril, a las 6:00 p.m., durante un patrullaje de la patrulla "Tenaz" del BCT N° 42 de la 2" Brigada de Infanteria - Pichari, como parte de las operaciones "Karonte 2024", el Sargento Primero Josbell Pinchi Pezo, de 27 años de edad y navegante, sufrió una caída en los alrededores del distrito de Canayre, provincia de Huanta, en el departamento de Ayacucho. </p>
-                    <button>LEER MAS</button>
+        <button class="menu"><i class="fa-solid fa-bars" ></i></button>
+        <ul class="ul">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+            <li><a href="#"><i class="fa-solid fa-users"></i>Nosotros</a>
+                <ul class="submenu"></a>
+                    <li><a href="mision.html">Misión y Misión</a></li>
+                    <li><a href="consejomunucipal.html" >Consejo Municipal</a></li>
+                    <li><a href="funcionarios.html" >Funcionarios</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fa-solid fa-users"></i>Picota</a>
+                <ul class="submenu"></a>
+                    <li><a href="historia.html" >Historia</a></li>
+                    <li><a href="distrito.html" >Distritos</a></li>
+                    <li><a href="escudo.html" >Escudo e Himno</a></li>
+                    <li><a href="recursosturisticos.html" >Recursos Turisticos</a></li>
+                </ul>
+            <li><a href="servicios.html"><i class="fa-solid fa-person-chalkboard" ></i>Servicios</a></li>
+            <li><a href="noticias.html"><i class="fa-solid fa-earth-americas"></i>Noticas</a></li>
+            <li><a href="contacto.html"><i class="fa-solid fa-address-book"></i>Contacto</a></li>
+        </ul>
+    </nav>
+        <main>  
+            <section class="seccion_distritos"></section>
+            
+            <div class="conteiner-servicios">
+                <div class="buenos_aires">
+                    <p>BUENOS AIRES</p>
+                    <img class="img_buenos_aires" src="buenos_aires.JFIF" alt="BUENOS AIRES">
                 </div>
-                <div class="img_noticas">
-                    <img src="/src/img_notica_1.jpeg" alt="Imagen de la noticia">
+                <div class="caspizapa">
+                    <p>CASPIZAPA</p>
+                    <img class="img_caspizapa" src="caspizapa.JFIF" alt="CASPIZAPA">
+                </div>
+                <div class="pilluana">
+                    <p>PILLUANA</p>
+                    <img class="img_pilluana" src="pilluana.jpg" alt="PILLUANA">
+                </div>
+                <div class="pucacaca">
+                    <p>PUCACACA</p>
+                    <img class="img_pucacaca" src="pucacaca.jfif" alt="PUCACACA">
+                </div>
+                <div class="san_cristobal">
+                    <p>SAN CRISTOBAL</p>
+                    <img class="img_san_cristobal" src="san_cristobal.jfif" alt="san_cristobal">
+                </div>
+                <div class="san_hilarion">
+                    <P>SAN HILARION</P>
+                    <img class="img_san_hilarion" src="san_hilarion.jfif" alt="san_hilarion">
+                </div>
+                <div class="shamboyacu">
+                    <p>SHAMBOYACU</p>
+                    <img class="img_shamboyacu" src="shamboyacu.jpg" alt="shamboyacu">
+                </div>
+                <div class="tingo_de_ponasa">
+                    <p>TINGO DE PONASA</p>
+                    <img class="img_ponasa" src="ponasa.jpg" alt="tingo_de_ponasa">
+                </div>
+                <div class="tres_unidos">
+                    <p>TRES UNIDOS</p>
+                    <img class="img_tres_unidos" src="tres_unidos.jfif" alt="tres_unidos">
                 </div>
             </div>
-            <div class="noticias">
-                <div class="img_noticas">
-                    <img src="/src/img_notica_2.jpeg" alt="Imagen de la noticia">
-                </div>
-                <div class="texto_noticias">
-                    <h2 class="titulo_noticas"> "AMPLIACIÓN DEL SERVICIO DE ELECTRIFICACIÓN RURAL".</h2>
-                    <p class="descripcion">El pasado 18 de abril, a las 6:00 p.m., durante un patrullaje de la patrulla "Tenaz" del BCT N° 42 de la 2" Brigada de Infanteria - Pichari, como parte de las operaciones "Karonte 2024", el Sargento Primero Josbell Pinchi Pezo, de 27 años de edad y navegante, sufrió una caída en los alrededores del distrito de Canayre, provincia de Huanta, en el departamento de Ayacucho. </p>
-                    <button>LEER MAS</button>
-                </div>
-            </div>
-            <div class="noticias">
-                <div class="texto_noticias">
-                    <h2 class="titulo_noticas"> 𝐒𝐎𝐋Ð𝐀𝐃𝐎 𝐏𝐈𝐂𝐎𝐓𝐈𝐍𝐎 𝐅𝐀𝐋𝐋𝐄𝐂𝐄 𝐄𝐍 𝐀𝐂𝐂𝐈𝐃𝐄𝐍𝐓𝐄 𝐄𝐍 𝐄𝐋 𝐕𝐑𝐀𝐄𝐌</h2>
-                    <p class="descripcion">El pasado 18 de abril, a las 6:00 p.m., durante un patrullaje de la patrulla "Tenaz" del BCT N° 42 de la 2" Brigada de Infanteria - Pichari, como parte de las operaciones "Karonte 2024", el Sargento Primero Josbell Pinchi Pezo, de 27 años de edad y navegante, sufrió una caída en los alrededores del distrito de Canayre, provincia de Huanta, en el departamento de Ayacucho. </p>
-                    <button>LEER MAS</button>
-                </div>
-                <div class="img_noticas">
-                    <img src="/src/img_notica_2.jpeg" alt="Imagen de la noticia">
-                </div>
-            </div>
-        </div>
-    </section>
-  
+            
+        </section>
+   
     </main>
     <footer>
         <div class="footer">        
@@ -120,7 +152,7 @@
         </div>
     </div>
     <div class="final">
-        <p>Municipalidad Provincial de Rioja - Perú © 2024</p> 
+        <p>Municipalidad Provincial de Picota - Perú © 2024</p> 
     </div>
     </footer>
     <script src="/script.js"></script>
